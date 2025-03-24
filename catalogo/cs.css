@@ -1,0 +1,47 @@
+/* Contenedor de los botones y el buscador */
+.navbar-buttons {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+/* Formulario de búsqueda */
+.navbar-buttons form {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Espacio entre el buscador y los botones */
+}
+
+.navbar-buttons input[type="search"] {
+    width: 200px; /* Ancho del campo de búsqueda */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Botones de Conectarse y Carrito */
+.navbar-buttons .btn {
+    padding: 10px 19px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+/* Alineación específica para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-buttons {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        gap: 5px; /* Reduce el espacio entre elementos */
+    }
+
+    .navbar-buttons form {
+        margin-right: 0; /* Elimina el margen derecho en móviles */
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .navbar-buttons input[type="search"] {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .navbar-buttons .btn {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: center; /* Centra el texto */
+    }
+}
